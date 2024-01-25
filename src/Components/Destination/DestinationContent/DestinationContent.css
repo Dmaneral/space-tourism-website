@@ -1,0 +1,201 @@
+.DestinationContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.planetImg {
+    width: 50%;
+    margin-bottom: 3rem;
+}
+
+.destList {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.7rem;
+}
+
+.destList > li {
+    color: #D0D6F9;
+    font-family: Barlow Condensed;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    padding-bottom: 1rem;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.planetName {
+    color: #FFF;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Bellefair;
+    font-size: 5.6rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0;
+}
+
+.planetDescription {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+.chooseDest {
+    margin-bottom: 3.5rem;
+}
+
+hr {
+    height: 1px;
+    background-color: #383B4B;
+    margin: 3.5rem 0;
+}
+
+.distance {
+    margin-bottom: 3rem;
+}
+
+.infoIndicate {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    text-transform: uppercase;
+    margin: 0.7rem;
+}
+
+.infoValue {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+#active-planet {
+    color: #FFF;
+    font-family: Barlow Condensed;
+    font-size: 1.4rem;
+    border-bottom: 2px solid white;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+}
+
+@media screen and (min-width: 768px) {
+    .DestinationContent {
+        padding: 0 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-end;
+    }
+    
+    .planetImg {
+        width: 45%;
+        margin-bottom: 3rem;
+    }
+       
+    .destList > li {
+        font-size: 1.8rem;
+    }
+    
+    .planetName {
+        font-size: 8rem;
+    }
+    
+    .planetDescription {
+        font-size: 1.7rem;
+        line-height: 30px;
+    }
+    
+    .infoIndicate {
+        font-size: 1.6rem;
+        padding-bottom: 0.2rem;
+    }
+    
+    .infoValue {
+        font-size: 3.2rem;
+    }
+    
+    #active-planet {
+        font-size: 1.8rem;
+    }
+}
+
+@media screen and (min-width: 1025px) {
+    .DestinationContent {
+        padding: 0 5rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        gap: 2rem;
+    }
+    
+    .planetImg {
+        width: 30%;
+        margin-bottom: 7rem;
+    }
+
+    .innerContent {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: 15rem;
+        margin-bottom: 5rem;
+    }
+    
+    hr {
+        width: 100%;
+    }
+
+    .planetDescription {
+        text-align: left;
+        width: 100%;
+    }
+    
+    .infoIndicate {
+        text-align: left;
+        margin-left: 0;
+    }
+
+    .planetInfo {
+        display: flex;
+        gap: 10rem;
+    }
+    
+    .infoValue {
+        font-size: 3.2rem;
+        text-align: left;
+    }
+    
+    #active-planet {
+        font-size: 1.8rem;
+    }
+
+    .destList li:hover {
+        border-bottom: 2px solid #fff6;
+    }
+}

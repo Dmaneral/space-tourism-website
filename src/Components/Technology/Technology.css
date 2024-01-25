@@ -1,0 +1,177 @@
+.Technology {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../../assets/technology/background-technology-mobile.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10rem 0 0 0;
+}
+
+.vehicleImg {
+    width: 100vw;
+    margin-bottom: 3.4rem;
+}
+
+.selectBtns {
+    display: flex;
+    gap: 1.6rem;
+    margin-bottom: 3.4rem;
+}
+
+.selectBtn {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 100%;
+    background: transparent;
+    color: rgba(225, 225, 255);
+    border: 1px solid rgba(225, 225, 255, 0.25);
+    outline: none;
+    font-family: Bellefair;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminology {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow Condensed;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 2.362px;
+    margin-bottom: 0.7rem;
+}
+
+.info {
+    padding: 0 2.5rem
+}
+
+.vehicleName {
+    color: #FFF;
+    text-align: center;
+    font-family: Bellefair;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.6rem;
+    text-transform: uppercase;
+}
+
+.about {
+    color: #D0D6F9;
+    text-align: center;
+    font-family: Barlow;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25px;
+}
+
+#active {
+    color: #0B0D17;
+    background-color: white;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .Technology {
+        background-image: url('../../assets/technology/background-technology-tablet.jpg');
+        padding-top: 12rem;
+    }
+
+    .Technology .headText {
+        margin-left: 3rem;
+        margin-bottom: 5rem;
+    }
+    
+    .vehicleImg {
+        width: 100vw;
+        margin-bottom: 8rem;
+    }
+    
+    .selectBtns {
+        display: flex;
+        gap: 1.6rem;
+        margin-bottom: 3.8rem;
+    }
+    
+    .selectBtn {
+        width: 5.5rem;
+        height: 5.5rem;
+        font-size: 2rem;
+    }
+
+    .terminology {
+        font-size: 1.7rem;
+        margin-bottom: 1.6rem;
+        padding-bottom: 0;
+    }
+    
+    .info {
+        width: 65%;
+        padding: 0 2.5rem
+    }
+    
+    .vehicleName {
+        font-size: 4rem;
+    }
+    
+    .about {
+        font-size: 1.7rem;
+        line-height: 28px;
+    }
+
+}
+
+@media screen and (min-width: 1025px) {
+    .Technology {
+        background-image: url('../../assets/technology/background-technology-desktop.jpg');
+        padding: 12rem 0 12rem 12rem;
+    }
+
+    .Technology .headText {
+        margin-left: 0;
+        margin-bottom: 5rem;
+    }
+    
+    .vehicleImg {
+        width: 35%;
+        margin-bottom: 0;
+    }
+
+    .container {
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    
+    .Technology .contentWrapper {
+        width: 50%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .selectBtns {
+        flex-direction: column;
+        margin-bottom: 0;
+        margin-right: 4rem;
+    }
+
+
+    .selectBtn:hover {
+        border: 1px solid white;
+    }
+}
